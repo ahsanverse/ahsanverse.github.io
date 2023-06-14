@@ -1,59 +1,71 @@
-body, header, li, ul, nav, main, p {margin: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
-
-.logo img {
-    size: 10px;
+body {
+  margin: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-nav {text-align: right;
-    position: relative;
-    right: 10%;
-    bottom: 30%;}
+.page {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 100px;
+}
 
-nav li {display: inline-block;
-    padding: 2%;}
+.page.dark {
+    background-color: black;
+    color: white;
+}
 
-nav li a {text-decoration: none;
-    color: rgb(115, 115, 115);
-    font-weight: bolder;}
+.logo {
+  width: 200px;
+}
 
-.images li {display: inline-block;
-    height: 490px;
-    width: 490px;
-    position: relative;
-    bottom: 120px;
-    right: 10px;}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.images li img {max-width: 100%;}
+header nav {
+  flex-grow: 1;
+}
 
-.images1 li {display: inline-block;
-    height: 490px;
-    width: 490px;
-    position: relative;
-    bottom: 278px;
-    right: 10px;}
+nav {
+  text-align: right;
+  position: relative;
+  right: 10%;
+  bottom: 30%;
+}
 
-.images1 li img {max-width: 100%;}
+nav li {
+  display: inline-block;
+  padding: 2%;
+}
 
-.images2 li {display: inline-block;
-    height: 490px;
-    width: 490px;
-    position: relative;
-    bottom: 437px;
-    right: 10px;}
+nav li a {
+  text-decoration: none;
+  color: rgb(115, 115, 115);
+  font-weight: bolder;
+}
 
-.images2 li img {max-width: 100%;}
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
-p {text-align: center;
-    font-size: 28px;
-    position: relative;
-    bottom: 500px;}
+.images img {
+    width: 100%;
+}
 
-nav li a:hover {color: rgb(206, 187, 63);
-    text-decoration: underline;}
+.text-center {
+  text-align: center;
+}
+
+nav li a:hover {
+  color: rgb(206, 187, 63);
+  text-decoration: underline;
+}
 
 .images li :hover {
-    color: black;
-    position: relative;
-    bottom: 5px;
+  color: black;
+  position: relative;
+  bottom: 5px;
 }
